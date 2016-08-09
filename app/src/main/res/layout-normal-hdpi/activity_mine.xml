@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MineActivity"
+    android:id="@+id/activity_mine"
+    android:background="#A9A9A9">
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="centerCrop"
+        android:id="@+id/background"
+        android:src="@mipmap/mineic"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arm Mine"
+        android:id="@+id/armmine"
+        android:layout_marginTop="80dp"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="35sp"
+        android:text="Disarmed"
+        android:id="@+id/status"
+        android:layout_below="@+id/armmine"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/timetoarmed"
+        android:paddingTop="40dp"
+        android:textSize="25sp"
+        android:layout_marginBottom="79dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Grenade"
+        android:id="@+id/button"
+        android:layout_above="@+id/timetoarmed"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
